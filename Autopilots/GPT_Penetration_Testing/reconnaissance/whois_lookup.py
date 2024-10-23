@@ -10,3 +10,4 @@ def whois_lookup(domain):
 if __name__ == "__main__":
     domain = input("Enter domain: ")
     whois_lookup(domain)
+ 
