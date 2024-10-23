@@ -13,5 +13,5 @@ def scan_port(host, port):
 
 if __name__ == "__main__":
     host = input("Enter host: ")
-    for port in range(1, 1024):
+    for port in range(1, 5555):
         scan_port(host, port)
