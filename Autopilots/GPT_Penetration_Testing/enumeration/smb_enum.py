@@ -5,7 +5,7 @@ def smb_enum(host):
     try:
         conn.connect(host, 139)
         print(f"Connected to {host}")
-    except Exception as e:
+    except Exception as e: 
         print(f"Error: {e}")
 
 if __name__ == "__main__":
