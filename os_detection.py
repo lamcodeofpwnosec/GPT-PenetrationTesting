@@ -3,7 +3,7 @@ import re
 from colorama import Fore
 import logging
 
-# Configure file_log track OS detection results
+# Configure file_log  track OS detection results
 logging.basicConfig(filename='os_detection_log.txt', level=logging.INFO, 
                     format='%(asctime)s - %(message)s')
 
