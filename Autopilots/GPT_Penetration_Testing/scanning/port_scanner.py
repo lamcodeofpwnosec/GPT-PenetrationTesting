@@ -11,7 +11,7 @@ def scan_port(host, port):
     finally:
         s.close()
 
-if __name__ == "__main__":
+if __name__ == "__main__": socket
     host = input("Enter host: ")
     for port in range(1, 5555):
         scan_port(host, port)
