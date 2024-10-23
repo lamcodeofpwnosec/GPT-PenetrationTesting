@@ -6,7 +6,7 @@ def scan_port(host, port):
     try:
         s.connect((host, port))
         print(f"Port {port} is open.")
-    except:
+    except: 
         print(f"Port {port} is closed.")
     finally:
         s.close()
