@@ -12,7 +12,7 @@ def run_sqlmap(url):
         # Running SQLMap to test for SQL injection vulnerabilities
         result = subprocess.run(['sqlmap', '-u', url, '--batch', '--risk=3', '--level=5'], 
                                 stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        
+         
         # Check for errors
         if result.returncode != 0:
             print(Fore.RED + f"Error running SQLMap: {result.stderr.decode()}" + Fore.WHITE)
