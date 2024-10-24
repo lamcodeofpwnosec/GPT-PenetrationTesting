@@ -7,7 +7,7 @@ logging.basicConfig(filename='web_exploit_discovery_log.txt', level=logging.INFO
                     format='%(asctime)s - %(message)s')
 
 def run_sqlmap(url):
-    print(Fore.YELLOW + f"Running SQLMap on {url}..." + Fore.WHITE)
+    print(Fore.YELLOW + f"Running SQLMap on {url}..." + Fore.WHITE) 
     try:
         # Running SQLMap to test for SQL injection vulnerabilities
         result = subprocess.run(['sqlmap', '-u', url, '--batch', '--risk=3', '--level=5'], 
